@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rooted - Family-First App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌿 Rooted</h1>
+    <p>Time to disconnect and be with your family.</p>
+
+    <label for="timeInput">Set screen time (minutes):</label>
+    <input type="number" id="timeInput" placeholder="e.g. 30">
+
+    <div class="button-group">
+      <button id="startBtn">Start Timer</button>
+      <button id="stopBtn">Stop Timer</button>
+      <button id="familyModeBtn">Activate Family Mode</button>
+      <button id="focusModeBtn">Activate Focus Mode</button>
+    </div>
+
+    <h2 id="countdown">00:00</h2>
+    <p id="totalUsage">Total Today: 0 minutes</p>
+
+    <div id="familyModeScreen" class="hidden">
+      <!-- Content gets added dynamically -->
+    </div>
+  </div>
+
+  <audio id="chime" src="https://www.soundjay.com/buttons/sounds/button-3.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
